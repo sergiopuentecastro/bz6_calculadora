@@ -149,7 +149,7 @@ class calculator(ttk.Frame):
         self.display = calculator.Display(self)
         self.display.pack(side=TOP, fill=BOTH, expand=True)
 
-        self.teclado = calculator.Keyboard(self, self.display.refresh)
+        self.teclado = calculator.Keyboard(self, self.gestiona_calculos)
         self.teclado.pack(side=TOP)
 
     def gestiona_calculos(self, tecla):
